@@ -1,0 +1,49 @@
+:root {
+  color: #f4f1eb;
+  background: #06070a;
+  font-family: Georgia, "Times New Roman", serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top, rgba(142, 17, 26, 0.18), transparent 42%),
+    linear-gradient(180deg, #090b10 0%, #05060a 100%);
+}
+
+#app {
+  position: relative;
+}
+
+canvas {
+  display: block;
+}
+
+.intro-text {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(90vw, 640px);
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  font-size: clamp(0.75rem, 1.2vw, 1rem);
+  line-height: 1.6;
+  color: rgba(244, 241, 235, 0.82);
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+}
